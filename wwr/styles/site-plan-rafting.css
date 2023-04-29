@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: var(--paragraph-font);
+  /* font-family: "Roboto", sans-serif; */
+  max-width: 960px;
+  padding: 20px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-hover-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+:root {
+  --primary_color: #1f6cb1ff;
+  --secondary_color: #e29319ff;
+  --accent_color1: #33a7e0ff;
+  --accent_color2: #0b1f4eff;
+  --accent_color3: #fdf6ecff;
+
+  --heading_font: "roboto", sans-serif;
+  --paragraph_font: "roboto", sans-serif;
+
+  --nav-background-color: #1f6cb1ff;
+  --nav-link-color: #fdf6ecff;
+  --nav-hover-link-color: #0b1f4eff;
+  --nav-hover-background-color: #e29319ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading_font);
+  color: var(--primary_color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent_color2);
+}
+
+p {
+  padding: 25px;
+}
