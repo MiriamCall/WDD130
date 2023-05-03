@@ -36,11 +36,6 @@ p {
 }
 
 aside {
-  margin: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
-  padding: 1em;
-  background-color: #eee;
-  color: #333;
   text-align: center;
 }
 
@@ -51,8 +46,9 @@ aside img {
 
 aside h2 {
   position: absolute;
-  top: 650px;
-  left: 350px;
+  top: 50px;
+  left: 0px;
+  right: 0px;
   color: white;
 }
 
@@ -70,4 +66,5 @@ footer {
   padding: 1rem;
   background-color: #eee;
   color: #333;
+  position: relative;
 }
