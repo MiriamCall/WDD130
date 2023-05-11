@@ -80,3 +80,9 @@ img {
 h2 {
   color: #0b1f4eff;
 }
+
+header {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
