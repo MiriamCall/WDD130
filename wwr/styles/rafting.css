@@ -9,7 +9,7 @@
   --heading_font: "roboto", sans-serif;
   --paragraph_font: "roboto", sans-serif;
 
-  --nav-background-color: rgba(31, 108, 177, 0.4);
+  --nav-background-color: rgba(31, 108, 177, 0.5);
   --nav-link-color: #fdf6ecff;
   --nav-hover-link-color: #0b1f4eff;
   --nav-hover-background-color: #e29319ff;
@@ -19,10 +19,47 @@ body {
   margin: 32px;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--primary_color);
+  padding: 1rem;
+}
+
+.logo {
+  grid-column: 1/2;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 2/4;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links {
+  /* border: solid 2px rgb(78, 74, 74); */
+  text-decoration: none;
+
+  color: var(--accent_color3);
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+  color: var(--secondary_color);
+}
+
+.active {
+  color: var(--secondary_color);
+}
+
 .hero {
   position: relative;
   max-height: 500px;
   overflow: hidden;
+  padding-top: 1.5rem;
 }
 
 .hero-img {
@@ -65,12 +102,40 @@ article .contents p {
   margin: 0;
 }
 
+.history-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+.history-left-container {
+  grid-column: 1/2;
+}
+
+.history-right-container {
+  display: flex;
+  align-items: center;
+  grid-column: 2/4;
+}
+
+/* Adventure section */
+.adventure-img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .sociallinks a {
   text-decoration: none;
 }
 
-.sociallinks img {
-  display: unset;
+.sociallinks {
+  display: flex;
+  justify-content: right;
 }
 
 img {
@@ -81,8 +146,14 @@ h2 {
   color: #0b1f4eff;
 }
 
-header {
-  flex-direction: row;
-  justify-content: flex-end;
+.copyright-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
 }
