@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary_color: #1f6cb1ff;
+  --secondary_color: #e29319ff;
+  --accent_color1: #33a7e0ff;
+  --accent_color2: #0b1f4eff;
+  --accent_color3: #fdf6ecff;
+
+  --heading_font: "roboto", sans-serif;
+  --paragraph_font: "roboto", sans-serif;
+
+  --nav-background-color: rgba(31, 108, 177, 0.5);
+  --nav-link-color: #fdf6ecff;
+  --nav-hover-link-color: #0b1f4eff;
+  --nav-hover-background-color: #e29319ff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 32px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--primary_color);
+  padding: 1rem;
+}
+
+.logo {
+  grid-column: 1/2;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 2/4;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links {
+  /* border: solid 2px rgb(78, 74, 74); */
+  text-decoration: none;
+
+  color: var(--accent_color3);
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+  color: var(--secondary_color);
+}
+
+.active {
+  color: var(--secondary_color);
+}
+
+.hero {
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+  padding-top: 1.5rem;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  text-align: center;
+  color: var(--accent_color3);
+}
+
+.hero-profile-img {
+  width: 200px;
+  height: 100px;
+}
+
+.trips article {
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  color: white;
+  width: 100%;
+}
+
+.trips article .contents {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--nav-background-color);
+  width: 75%;
+  margin: auto;
+}
+
+.trips article .contents p {
+  margin: 0;
+}
+
+/* .trip-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+  margin: auto;
+} */
+
+.trips .main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trips .card-1 {
+  grid-column: 1/2;
+}
+.trips .card-2 {
+  grid-column: 2/3;
+}
+.trips .card-3 {
+  grid-column: 3/4;
+}
+
+/* .trip-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  grid-column: 2/4;
+} */
+.trips .rafting-trip {
+  padding: 1rem;
+}
+
+/* Adventure section */
+.trips .adventure-img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: right;
+}
+
+img {
+  display: block;
+}
+
+h2 {
+  color: #0b1f4eff;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
